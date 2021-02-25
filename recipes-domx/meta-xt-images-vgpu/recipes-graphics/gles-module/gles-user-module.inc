@@ -57,7 +57,6 @@ EXTRA_OEMAKE += "PVRSRV_VZ_NUM_OSID=${XT_PVR_NUM_OSID}"
 RDEPENDS_${PN} = " \
     kernel-module-gles \
     python \
-    python-clang \
     ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', 'libgbm wayland-kms', '', d)} \
 "
 
